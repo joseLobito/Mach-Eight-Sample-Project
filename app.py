@@ -1,5 +1,6 @@
 import pandas as pd 
 import sys
+import os
 import random
 from SaveList import SaveList 
 
@@ -8,7 +9,12 @@ from SaveList import SaveList
 def find_pairs_with_sum(numbers, target_sum):
     pairs = []
     seen = set()
-    
+    if os.path.exists('log.csv'):
+        global data
+        data = pd.read_csv('log.csv')
+    else:
+        new_log = pd.DataFrame(columns=['Numbers', 'Target Sum'])
+        new_log.to_csv('log.csv', index=False)
     for num in numbers:
         complement = target_sum - num
         
@@ -19,9 +25,9 @@ def find_pairs_with_sum(numbers, target_sum):
     if len(pairs) == 0:
         print("No pairs found that sum up to the target.")
     else:
-        data = pd.read_csv('log.csv')
         new_log = pd.Series({'Numbers': pairs, 'Target Sum': target_sum})
         data = data.append(new_log,ignore_index=True)
+        data = pd.DataFrame(data)
         data.to_csv('log.csv', index=False)
     
     return pairs
