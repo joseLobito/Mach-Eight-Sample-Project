@@ -35,3 +35,17 @@ This will generate a random list and save it in the `list_numbers.csv` file.
 2. **Run the Program**: Once you have the `list_numbers.csv` file, you can execute the main program without arguments using the following command:
 
 
+## Running the Number Pairs Finder Function
+
+To execute the Number Pairs Finder function, follow these steps:
+
+1. Make sure you have Python installed on your system. If you don't have Python installed, you can download it from the official Python website: [Download Python](https://www.python.org/downloads/).
+
+2. Open a terminal or command prompt on your operating system.
+
+3. Save the provided code into a Python file. You can name the file as you like, for example, "find_pairs.py."
+
+4. Run the Python file from the terminal using the `python` command followed by the file name. For example, if the file is named "find_pairs.py," type the following and press Enter:
+
+   ```bash
+   python find_pairs.py
