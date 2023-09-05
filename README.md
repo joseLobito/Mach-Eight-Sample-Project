@@ -43,9 +43,7 @@ To execute the Number Pairs Finder function, follow these steps:
 
 2. Open a terminal or command prompt on your operating system.
 
-3. Save the provided code into a Python file. You can name the file as you like, for example, "find_pairs.py."
-
-4. Run the Python file from the terminal using the `python` command followed by the file name. For example, if the file is named "find_pairs.py," type the following and press Enter:
+4. Run the Python file from the terminal using the `python` command followed by the file name. For example, if the file is named "task.py," type the following and press Enter:
 
    ```bash
-   python find_pairs.py
+   python task.py
